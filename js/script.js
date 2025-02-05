@@ -1,12 +1,11 @@
- let slideIndex = 0;
-        const slides = document.querySelectorAll(".slide");
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('nav ul li a');
 
-        function moveSlide(step) {
-            slides[slideIndex].style.display = "none";
-            slideIndex = (slideIndex + step + slides.length) % slides.length;
-            slides[slideIndex].style.display = "block";
-        }
-
-        slides.forEach((slide, index) => {
-            slide.style.display = index === 0 ? "block" : "none";
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const targetPage = link.getAttribute('href');
+            window.location.href = targetPage;
         });
+    });
+});
