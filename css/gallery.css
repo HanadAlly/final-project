@@ -1,0 +1,76 @@
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    gap: 2 rem;
+}
+/* Ensures that images inside the gallery have the same size */
+.image-section {
+    text-align: center; /* Centers the gallery section */
+    margin: 20px;
+}
+
+.slider-container {
+    position: relative;
+    display: inline-block;
+    width: 80%; /* Adjust the container width as needed */
+    overflow: hidden;
+}
+
+.slider {
+    display: flex; /* Align images side by side */
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide img {
+    width: 100%; /* Ensures images take up full width of container */
+    height: 300px; /* Set a fixed height to make all images the same size */
+    object-fit: cover; /* Ensures images are scaled to cover the area without distortion */
+    display: block;
+}
+
+.caption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Prev and Next buttons */
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+
+button.prev {
+    left: 0;
+}
+
+button.next {
+    right: 0;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive Design: Adjust the size of images for smaller screens */
+@media (max-width: 768px) {
+    .slider-container {
+        width: 100%;
+    }
+
+    .slide img {
+        height: 200px; /* Adjust height for mobile screens */
+    }
+}
+

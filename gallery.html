@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="css/gallery.css">
     <script src="js/script.js" defer></script>
     <title>Document</title>
 </head>
@@ -12,23 +13,31 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">Gallery</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-     <div class="image-section">
-                <h2>Gallery</h2>
-                <div class="slider-container">
-                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-                    <div class="slider">
-                        <img src="./images/foundation image 1" class="slide" alt="Image 1">
-                        <img src="./images/foundation image 2" class="slide" alt="Image 2">
-                        <img src="./images/foundation image 3" class="slide" alt="Image 3">
-                    </div>
-                    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    <div class="image-section">
+        <h2>Gallery</h2>
+        <div class="slider-container">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="slider">
+                <div class="slide">
+                    <img src="./images/foundation image 1" alt="Image 1">
+                    <div class="caption">Our foundation actively plants trees, promoting environmental sustainability and fostering a greener, healthier future for all.</div>
+                </div>
+                <div class="slide">
+                    <img src="./images/foundation image 2" alt="Image 2">
+                    <div class="caption">Caption for Image 2</div>
+                </div>
+                <div class="slide">
+                    <img src="./images/foundation image 3" alt="Image 3">
+                    <div class="caption">Our foundation supports needy students by providing essential resources, empowering their educational journey and future success.</div>
                 </div>
             </div>
-
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </div>
 </body>
 </html>
