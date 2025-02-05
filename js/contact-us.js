@@ -2,7 +2,7 @@
     event.preventDefault();
 
     const phoneNumber = "+254114235857";
-    
+
     const output = document.getElementById("output");
-    output.innerHTML = `To contact us, click to call: <a href="tel:${phoneNumber}">${phoneNumber}</a>`;
+    output.innerHTML = `To contact us, click to call: <a href="tel:${phoneNumber}">${+254114235857}</a>`;
   }
