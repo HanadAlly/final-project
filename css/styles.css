@@ -7,4 +7,5 @@ nav ul{
     justify-content: space-evenly;
     list-style-type: none;
     gap: 2 rem;
+    color: thistle;
 }

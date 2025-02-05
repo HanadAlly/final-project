@@ -2,13 +2,13 @@
     background-color: aquamarine;
 }
 header {
-    position: fixed; /* Fixes the header at the top of the page */
-    top: 0; /* Places the header at the very top */
-    left: 0; /* Aligns the header to the left of the page */
-    width: 100%; /* Makes the header span the entire width of the page */
-    color: white; /* White text for contrast */
-    padding: 10px 0; /* Padding for spacing */
-    z-index: 1000; /* Ensures the header stays on top of other content */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding: 10px 0;
+    z-index: 1000;
 }
 
 nav ul{
@@ -17,6 +17,7 @@ nav ul{
     justify-content: space-evenly;
     list-style-type: none;
     gap: 2 rem;
+    color: thistle;
 }
 
 body {
