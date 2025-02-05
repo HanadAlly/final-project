@@ -6,4 +6,5 @@ The website I designed briefly gives the public a picture of what our foundation
 ### AUTHOR 
 Ali Mohammed Hanad.
 
-### 
+### HOW TO ACCESS MY WEBSITE
+ https://hanadally.github.io/final-project/
